@@ -1,0 +1,1 @@
+function j = mean_squared_error(x,y,theta0,theta1)h = theta0 + theta1*x;err = (h-y).^2;m = length(x);j = 1/(2*m) * sum(err);

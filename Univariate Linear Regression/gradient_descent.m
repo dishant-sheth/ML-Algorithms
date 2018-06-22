@@ -1,0 +1,1 @@
+function [the0,the1] = gradient_descent(x,y,theta0,theta1,alpha)hypothesis = theta0 + theta1*x;err = (hypothesis - y);m = length(x);t0 = theta0 - ((alpha*(1/m))*sum(err));t1 = theta1 - ((alpha*(1/m))*sum(err.*x));the0 = t0;the1 = t1;
