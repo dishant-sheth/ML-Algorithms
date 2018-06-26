@@ -1,0 +1,1 @@
+function col = mean_normalization(x)x_bar = mean(x);x_range = max(x) - min(x);i=1;while i <= length(x),  x(i) = (x(i) - x_bar)/x_range;  i = i+1;end;col = x;

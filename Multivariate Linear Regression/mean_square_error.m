@@ -1,0 +1,1 @@
+function j = mean_square_error(x,y,theta0,theta1,theta2,theta3)hyp = theta0 + theta1*x(:,1) + theta2*x(:,2) + theta3*x(:,3);err_rate = (hyp - y).^2;m = size(x,1);j = 1/(2*m) * sum(err_rate);

@@ -1,0 +1,1 @@
+function col = handle_null(x)i=1;while i <= length(x),  if x(i) == 0,    x(i) = mean(x);  end;  i = i+1;end;col = x;

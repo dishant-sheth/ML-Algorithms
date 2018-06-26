@@ -1,0 +1,1 @@
+function [the0,the1,the2,the3] = gradient_descent(x,y,theta0,theta1,theta2,theta3,alpha)hyp = theta0 + theta1*x(:,1) + theta2*x(:,2) + theta3*x(:,3);err = (hyp - y);m = size(x,1);the0 = theta0 - ((alpha/m)*sum(err));the1 = theta1 - ((alpha/m)*sum(err.*x(:,1)));the2 = theta2 - ((alpha/m)*sum(err.*x(:,2)));the3 = theta3 - ((alpha/m)*sum(err.*x(:,3)));
